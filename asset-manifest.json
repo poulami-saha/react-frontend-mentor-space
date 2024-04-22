@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/static/css/main.9c580739.css",
+    "main.js": "/static/js/main.0f631cbb.js",
+    "static/media/image-victor-glover.png": "/static/media/image-victor-glover.8a9a5424588b73ec61c2.png",
+    "static/media/image-anousheh-ansari.png": "/static/media/image-anousheh-ansari.2d647128496ddc638acd.png",
+    "static/media/image-mark-shuttleworth.png": "/static/media/image-mark-shuttleworth.fc30f35b05fc0bc4ee47.png",
+    "static/media/Barlow-Light.ttf": "/static/media/Barlow-Light.19f244ecb11218b9a7de.ttf",
+    "static/media/BarlowCondensed-Light.ttf": "/static/media/BarlowCondensed-Light.3ba02bbdeb04e17f34bf.ttf",
+    "static/media/image-douglas-hurley.png": "/static/media/image-douglas-hurley.7540fbb61923064f065e.png",
+    "static/media/background-home-desktop.jpg": "/static/media/background-home-desktop.cdf3864ecbfdf20e8c3b.jpg",
+    "static/media/image-moon.png": "/static/media/image-moon.d287d07182de3015952f.png",
+    "static/media/image-europa.png": "/static/media/image-europa.3e95f7d0a16fe2ebf4c6.png",
+    "static/media/Bellefair-Regular.ttf": "/static/media/Bellefair-Regular.6b84d927d5ad108e909a.ttf",
+    "static/media/background-home-tablet.jpg": "/static/media/background-home-tablet.bc9efcc3281fa6801077.jpg",
+    "static/media/image-mars.png": "/static/media/image-mars.1b224c8663251270d79f.png",
+    "static/media/image-spaceport-portrait.jpg": "/static/media/image-spaceport-portrait.85523db5de13057f36ea.jpg",
+    "static/media/image-titan.png": "/static/media/image-titan.d4b078f9ce17e686ae99.png",
+    "static/media/image-space-capsule-portrait.jpg": "/static/media/image-space-capsule-portrait.dd0ac138afef98c1666a.jpg",
+    "static/media/image-launch-vehicle-portrait.jpg": "/static/media/image-launch-vehicle-portrait.0c758955a178bdcc3230.jpg",
+    "static/media/background-home-mobile.jpg": "/static/media/background-home-mobile.13f7adecbcb3c3f170d8.jpg",
+    "index.html": "/index.html",
+    "main.9c580739.css.map": "/static/css/main.9c580739.css.map",
+    "main.0f631cbb.js.map": "/static/js/main.0f631cbb.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9c580739.css",
+    "static/js/main.0f631cbb.js"
+  ]
+}
