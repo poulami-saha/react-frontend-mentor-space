@@ -46,10 +46,10 @@ const Destination = () => {
       <p className="text-white font-barlow-condensed text-xl my-2 md:my-10 mx-16 tracking-wider">
         <span className="mr-5 text-gray-400">01</span> PICK YOUR DESTINATION
       </p>
-      <div className="flex flex-col items-center lg:flex-row lg: justify-items-stretch overflow-y-auto">
+      <div className="flex flex-col items-center lg:flex-row lg: justify-items-stretch overflow-y-auto lg:mx-32">
         <img
           src={image}
-          className="h-1/2 w-1/2 md:h-full lg:w-full mx-20 mb-5 md:mb-20"
+          className="h-1/2 w-1/2 md:h-full lg:w-1/3 mx-20 mb-5 md:mb-20"
         />
         <div className="lg:ml-10 flex flex-col items-center">
           <div className="flex gap-8">
@@ -68,7 +68,7 @@ const Destination = () => {
           <p className="font-bellefair text-4xl md:text-8xl text-white my-6">
             {name}
           </p>
-          <p className="font-barlow text-[#D0D6F9] text-md md:text-lg lg:text-xl  w-80">
+          <p className="font-barlow text-[#D0D6F9] text-md md:text-lg lg:text-xl w-80">
             {description}
           </p>
           <div class="divide-y h-3 divide-[#979797]"></div>
