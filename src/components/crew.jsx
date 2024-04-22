@@ -37,24 +37,32 @@ const Crews = {
 
 const Crew = () => {
   return (
-    <div className="mx-32 h-3/4">
-      <p className="text-white font-barlow text-xl">
+    <div className="md:mx-32 h-3/4">
+      <p className="text-white font-barlow-condensed text-xl my-2 md:my-10 mx-20 tracking-wider">
         <span className="mr-5 text-gray-400">02</span> PICK YOUR Crew
       </p>
-      <Carousel transition={{ duration: 1 }} className="rounded-xl overflow-y-hidden"> 
+      <Carousel
+        transition={{ duration: 1 }}
+        className="rounded-xl overflow-y-auto md:overflow-y-hidden"
+      >
         {Object.values(Crews).map((crew) => {
           return (
-            <div className="flex justify-between ml-20" key={crew.name}>
-              <div className="flex flex-col mt-32">
-                <p className="text-white font-bellefair text-2xl font-normal opacity-50">
+            <div
+              className="flex flex-col items-center lg:flex-row lg:justify-between mx-5 md:ml-20"
+              key={crew.name}
+            >
+              <div className="flex flex-col items-center mt-8 md:mt-32 lg:mt-16 lg:items-start">
+                <p className="text-white font-bellefair text-lg md:text-2xl font-normal opacity-50 ">
                   {crew.designation}
                 </p>
-                <p className="text-white font-bellefair text-6xl font-normal mt-4">
+                <p className="text-white font-bellefair  text-3xl md:text-5xl font-normal mt-1 md:mt-4">
                   {crew.name}
                 </p>
-                <p className="text-[#D0D6F9] font-barlow text-lg mt-7 w-80">{crew.description}</p>
+                <p className="text-[#D0D6F9] font-barlow text-md md:text-lg mt-1 md:mt-7 w-92 lg:w-80">
+                  {crew.description}
+                </p>
               </div>
-              <img src={crew.image} className="h-screen" />
+              <img src={crew.image} className="mt-8 h-4/5" />
             </div>
           );
         })}

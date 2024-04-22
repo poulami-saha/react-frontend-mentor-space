@@ -20,7 +20,7 @@ const Navbar = () => {
       <img src={Logo} />
 
       {/* Desktop Navigation */}
-      <ul className="hidden md:flex bg-slate-800 ml-20">
+      <ul className="hidden md:flex">
         {navItems.map((item) => (
           <li
             key={item.id}
@@ -41,17 +41,17 @@ const Navbar = () => {
         className={
           nav
             ? "fixed md:hidden left-0 top-0 w-[60%] h-full border-r border-r-gray-900 bg-[#000300] ease-in-out duration-500"
-            : "ease-in-out w-[60%] duration-500 fixed top-0 bottom-0 left-[-100%]"
+            : "ease-in-out w-[60%] duration-500 fixed top-0 bottom-0 left-[-100%] z-10"
         }
       >
         {/* Mobile Logo */}
-        <img src={Logo} />
+        <img src={Logo} className="mx-6 my-6"/>
 
         {/* Mobile Navigation Items */}
         {navItems.map((item) => (
           <li
             key={item.id}
-            className="p-4 border-b rounded-xl hover:bg-[#00df9a] duration-300 hover:text-black cursor-pointer border-gray-600"
+            className="p-4 border-b rounded-xl  cursor-pointer border-gray-600 font-barlow-condensed"
           >
             <Link to={`${item.route}`}>{item.text}</Link>
           </li>

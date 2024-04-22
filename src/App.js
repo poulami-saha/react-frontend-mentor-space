@@ -16,17 +16,15 @@ function App() {
   const { hash, pathname, search } = location;
   const screenSize = useScreenSize();
   const [backgroundImage, setBackgroundImage] = useState();
-  console.log(pathname);
 
   const getBackgroundImage = () => {
     const screenWidth = screenSize.width;
-    console.log(screenWidth)
     switch (true) {
-      case screenWidth > 640 && screenWidth < 767:
+      case screenWidth >= 360 && screenWidth < 767:
         return MobileBackground;
       case screenWidth > 768 && screenWidth < 1023:
         return TabletBackground;
-      case screenWidth > 1024:{
+      case screenWidth > 1024: {
         return DesktopBackground;
       }
     }
@@ -49,8 +47,9 @@ function App() {
       style={{
         backgroundImage: `url(${backgroundImage})`,
         backgroundColor: "black",
-        width: "100vw",
+        // width: "100vw",
         height: "100vh",
+        backgroundSize: "cover",
       }}
     >
       <Navbar />

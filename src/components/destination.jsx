@@ -42,19 +42,22 @@ const Destination = () => {
   const [{ name, description, distance, travelTime, image }, setDestination] =
     useState(planets.MOON);
   return (
-    <div className="mx-32">
-      <p className="text-white font-barlow text-xl mb-10 mt-10">
+    <div>
+      <p className="text-white font-barlow-condensed text-xl my-2 md:my-10 mx-16 tracking-wider">
         <span className="mr-5 text-gray-400">01</span> PICK YOUR DESTINATION
       </p>
-      <div className="flex justify-items-stretch">
-        <img src={image} className="mx-20" />
-        <div className="ml-10">
+      <div className="flex flex-col items-center lg:flex-row lg: justify-items-stretch overflow-y-auto">
+        <img
+          src={image}
+          className="h-1/2 w-1/2 md:h-full lg:w-full mx-20 mb-5 md:mb-20"
+        />
+        <div className="lg:ml-10 flex flex-col items-center">
           <div className="flex gap-8">
             {Object.keys(planets).map((planet) => {
               return (
                 <p
                   key={planet}
-                  className="text-white font-barlow text-lg font-normal" 
+                  className="text-white font-barlow text-md md:text-lg font-normal"
                   onClick={() => setDestination(planets[planet])}
                 >
                   {planet}
@@ -62,10 +65,14 @@ const Destination = () => {
               );
             })}
           </div>
-          <p className="font-bellefair text-8xl text-white my-6">{name}</p>
-          <p className="font-barlow text-[#D0D6F9] w-80">{description}</p>
+          <p className="font-bellefair text-4xl md:text-8xl text-white my-6">
+            {name}
+          </p>
+          <p className="font-barlow text-[#D0D6F9] text-md md:text-lg lg:text-xl  w-80">
+            {description}
+          </p>
           <div class="divide-y h-3 divide-[#979797]"></div>
-          <div className="flex mt-20 gap-16">
+          <div className="flex mt-5 md:mt-20 gap-16">
             <div className="flex flex-col">
               <p className="text-[#D0D6F9] text-sm font-barlow-condensed">
                 AVG. DISTANCE
