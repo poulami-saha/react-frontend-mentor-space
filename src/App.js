@@ -41,7 +41,7 @@ function App() {
       const image = getBackgroundImage();
       setBackgroundImage(image);
     }
-  });
+  }, [screenSize.width]);
   return (
     <div
       style={{

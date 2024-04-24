@@ -41,10 +41,11 @@ const Technology = () => {
   useEffect(() => {
     if (width > 1024) {
       setDesktopView(true);
-    } else {
+    }
+      else {
       setDesktopView(false);
     }
-  });
+  }, [width]);
 
   if (desktopView) {
     return (
