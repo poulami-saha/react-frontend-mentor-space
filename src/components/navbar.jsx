@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 import Logo from "../assets/logo.png";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -16,8 +16,8 @@ const Navbar = () => {
     { id: 4, route: "/technology", text: "03 Technology" },
   ];
   return (
-    <div className="flex justify-between items-center h-24 max-w-[1240px] mx-10 px-4 text-white">
-      <img src={Logo} />
+    <div className="flex justify-between items-center h-24 max-w-[1240px] mx-1 md:mx-10 px-4 text-white">
+      <img src={Logo} className="h-1/3 md:h-auto" />
 
       {/* Desktop Navigation */}
       <ul className="hidden md:flex">
@@ -40,20 +40,22 @@ const Navbar = () => {
       <ul
         className={
           nav
-            ? "fixed md:hidden left-0 top-0 w-[60%] h-full border-r border-r-gray-900 bg-[#000300] ease-in-out duration-500"
-            : "ease-in-out w-[60%] duration-500 fixed top-0 bottom-0 left-[-100%] z-10"
+            ? "fixed md:hidden right-0 top-0 w-[60%] h-full border-r border-r-gray-900 bg-[#000300] ease-in-out duration-500"
+            : "ease-in-out w-[60%] duration-500 fixed top-0 bottom-0 right-[-100%] z-10"
         }
       >
-        {/* Mobile Logo */}
-        <img src={Logo} className="mx-6 my-6"/>
-
         {/* Mobile Navigation Items */}
+        <li className="my-10 ml-5">
+          <AiOutlineClose size={20} onClick={handleNav} />
+        </li>
         {navItems.map((item) => (
           <li
             key={item.id}
-            className="p-4 border-b rounded-xl  cursor-pointer border-gray-600 font-barlow-condensed"
+            className=" ml-5 p-4  cursor-pointer font-barlow-condensed"
           >
-            <Link to={`${item.route}`}>{item.text}</Link>
+            <NavLink to={`${item.route}`} onClick={handleNav}>
+              {item.text}
+            </NavLink>
           </li>
         ))}
       </ul>

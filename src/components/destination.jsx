@@ -43,13 +43,13 @@ const Destination = () => {
     useState(planets.MOON);
   return (
     <div>
-      <p className="text-white font-barlow-condensed text-xl my-2 md:my-10 mx-16 tracking-wider">
+      <p className="text-white font-barlow-condensed text-xl my-1 md:my-10 mx-16 tracking-wider">
         <span className="mr-5 text-gray-400">01</span> PICK YOUR DESTINATION
       </p>
       <div className="flex flex-col items-center lg:flex-row lg: justify-items-stretch overflow-y-auto lg:mx-32">
         <img
           src={image}
-          className="h-1/2 w-1/2 md:h-full lg:w-1/3 mx-20 mb-5 md:mb-20"
+          className="h-1/3 w-1/3  md:h-full lg:w-1/3 mx-20 mb-5 md:mb-20"
         />
         <div className="lg:ml-10 flex flex-col items-center">
           <div className="flex gap-8">
@@ -57,7 +57,7 @@ const Destination = () => {
               return (
                 <p
                   key={planet}
-                  className="text-white font-barlow text-md md:text-lg font-normal"
+                  className="text-white font-barlow-condensed text-sm md:text-lg font-normal"
                   onClick={() => setDestination(planets[planet])}
                 >
                   {planet}
@@ -65,25 +65,25 @@ const Destination = () => {
               );
             })}
           </div>
-          <p className="font-bellefair text-4xl md:text-8xl text-white my-6">
+          <p className="font-bellefair text-4xl md:text-8xl text-white my-3 md:my-6 font-normal">
             {name}
           </p>
-          <p className="font-barlow text-[#D0D6F9] text-md md:text-lg lg:text-xl w-80">
+          <p className="font-barlow text-center text-[#D0D6F9] text-md md:text-lg lg:text-xl w-80 md:w-96">
             {description}
           </p>
           <div class="divide-y h-3 divide-[#979797]"></div>
-          <div className="flex mt-5 md:mt-20 gap-16">
+          <div className="flex flex-col  text-center gap-8 md:flex-row mt-5 md:mt-20 md:gap-16">
             <div className="flex flex-col">
               <p className="text-[#D0D6F9] text-sm font-barlow-condensed">
                 AVG. DISTANCE
               </p>
-              <p className="text-white text-xl font-bellefair">{distance} KM</p>
+              <p className="text-white text-xl md:text-2xl font-bellefair">{distance} KM</p>
             </div>
             <div className="flex flex-col">
               <p className="text-[#D0D6F9] text-sm font-barlow-condensed">
                 EST. TRAVEL TIME
               </p>
-              <p className="text-white text-xl font-bellefair">{travelTime}</p>
+              <p className="text-white text-xl md:text-2xl font-bellefair">{travelTime}</p>
             </div>
           </div>
         </div>
