@@ -22,7 +22,7 @@ function App() {
     switch (true) {
       case screenWidth >= 360 && screenWidth < 767:
         return MobileBackground;
-      case screenWidth > 768 && screenWidth < 1023:
+      case screenWidth >= 768 && screenWidth < 1023:
         return TabletBackground;
       case screenWidth > 1024: {
         return DesktopBackground;

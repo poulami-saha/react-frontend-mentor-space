@@ -17,7 +17,7 @@ const Home = () => {
       </div>
       <div
         className="w-32 h-32 md:w-60 md:h-60 rounded-full flex 
- justify-center items-center bg-white mt-20 md:mt-48 lg:mt-1 mx-20"
+ justify-center items-center bg-white mt-20 md:mt-20 lg:mt-1 mx-20"
       >
         <p className="z-1 font-bellefair text-[#0B0D17]  text-xl md:text-3xl font-normal py-6">
           EXPLORE
