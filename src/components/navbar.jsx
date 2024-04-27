@@ -2,12 +2,16 @@ import { useState } from "react";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 import Logo from "../assets/logo.png";
 import { Link, NavLink } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
   const handleNav = () => {
     setNav(!nav);
   };
+
+  const location = useLocation();
+  const { pathname } = location;
 
   const navItems = [
     { id: 1, route: "/", text: "00 Home" },
@@ -20,13 +24,20 @@ const Navbar = () => {
       <img src={Logo} className="h-1/3 md:h-auto" />
 
       {/* Desktop Navigation */}
-      <ul className="hidden md:flex">
+      <ul className="hidden md:flex bg-gray-900 px-10 py-5">
         {navItems.map((item) => (
           <li
             key={item.id}
-            className="p-4 rounded-xl m-2 cursor-pointer text-lg font-barlow-condensed text-white font-normal tracking-tight"
+            className="mx-4 m-2 cursor-pointer text-lg font-barlow-condensed text-white font-normal tracking-tight"
           >
-            <Link to={`${item.route}`}>{item.text}</Link>
+            <Link
+              to={`${item.route}`}
+              className={
+                item.route === pathname && "pb-2 border-b-2 border-white"
+              }
+            >
+              {item.text}
+            </Link>
           </li>
         ))}
       </ul>

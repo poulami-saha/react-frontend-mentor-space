@@ -57,7 +57,10 @@ const Destination = () => {
               return (
                 <p
                   key={planet}
-                  className="text-white font-barlow-condensed text-sm md:text-lg font-normal"
+                  className={`cursor-pointer text-white font-barlow-condensed text-sm md:text-lg font-normal ${
+                    planet === name ? "pb-2 border-b-2 border-white" : ""
+                  }
+                  `}
                   onClick={() => setDestination(planets[planet])}
                 >
                   {planet}
@@ -77,13 +80,17 @@ const Destination = () => {
               <p className="text-[#D0D6F9] text-sm font-barlow-condensed">
                 AVG. DISTANCE
               </p>
-              <p className="text-white text-xl md:text-2xl font-bellefair">{distance} KM</p>
+              <p className="text-white text-xl md:text-2xl font-bellefair">
+                {distance} KM
+              </p>
             </div>
             <div className="flex flex-col">
               <p className="text-[#D0D6F9] text-sm font-barlow-condensed">
                 EST. TRAVEL TIME
               </p>
-              <p className="text-white text-xl md:text-2xl font-bellefair">{travelTime}</p>
+              <p className="text-white text-xl md:text-2xl font-bellefair">
+                {travelTime}
+              </p>
             </div>
           </div>
         </div>

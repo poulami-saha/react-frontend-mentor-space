@@ -13,7 +13,7 @@ import { useEffect, useState } from "react";
 
 function App() {
   const location = useLocation();
-  const { hash, pathname, search } = location;
+  const { pathname } = location;
   const screenSize = useScreenSize();
   const [backgroundImage, setBackgroundImage] = useState();
 
