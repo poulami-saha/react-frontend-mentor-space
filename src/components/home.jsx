@@ -4,7 +4,7 @@ const Home = () => {
       className="flex flex-col items-center lg:flex-row align-middle text-white mx-8 lg:mx-20 md:mt-60 justify-center align-items-center"
     >
       <div className="flex flex-col items-center lg:items-start lg:mb-40 lg:mr-40 ">
-        <p className="font-barlow-condensed tracking-widest text-md md:text-3xl font-normal mb-2 text-[#D0D6F9]">
+        <p className="font-barlowCondensed tracking-widest text-md md:text-3xl font-normal mb-2 text-[#D0D6F9]">
           SO, YOU WANT TO TRAVEL TO
         </p>
         <p className="font-bellefair text-8xl md:text-9xl md:tracking-widest my-6 font-normal">SPACE</p>

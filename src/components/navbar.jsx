@@ -28,7 +28,7 @@ const Navbar = () => {
         {navItems.map((item) => (
           <li
             key={item.id}
-            className="mx-4 m-2 cursor-pointer text-lg font-barlow-condensed text-white font-normal tracking-tight"
+            className="mx-4 m-2 cursor-pointer text-lg font-barlowCondensed text-white font-normal tracking-tight"
           >
             <Link
               to={`${item.route}`}
@@ -62,7 +62,7 @@ const Navbar = () => {
         {navItems.map((item) => (
           <li
             key={item.id}
-            className=" ml-5 p-4  cursor-pointer font-barlow-condensed"
+            className=" ml-5 p-4  cursor-pointer font-barlowCondensed"
           >
             <NavLink to={`${item.route}`} onClick={handleNav}>
               {item.text}

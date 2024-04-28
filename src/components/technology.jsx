@@ -50,7 +50,7 @@ const Technology = () => {
   if (desktopView) {
     return (
       <div className="mx-32 h-3/4">
-        <p className="text-white font-barlow-condensed text-xl mb-10 mt-10 tracking-wider">
+        <p className="text-white font-barlowCondensed text-xl mb-10 mt-10 tracking-wider">
           <span className="mr-5 text-gray-400">03</span> SPACE LAUNCH 101
         </p>
         <div className="flex flex-col items-center lg:flex-row lg:justify-between">
@@ -74,7 +74,7 @@ const Technology = () => {
               })}
             </div>
             <div className="flex flex-col mt-32 mx-20">
-              <p className="text-[#D0D6F9] font-barlow-condensed text-lg font-normal">
+              <p className="text-[#D0D6F9] font-barlowCondensed text-lg font-normal">
                 THE TERMINOLOGY…
               </p>
               <p className="text-white font-bellefair text-5xl font-normal mt-3">
@@ -93,7 +93,7 @@ const Technology = () => {
   } else {
     return (
       <div className="h-3/4 overflow-y-auto overflow-x-hidden">
-        <p className="text-white font-barlow-condensed text-xl my-10 mx-20 tracking-wider">
+        <p className="text-white font-barlowCondensed text-xl my-10 mx-20 tracking-wider">
           <span className="mr-5 text-gray-400">03</span> SPACE LAUNCH 101
         </p>
         <img src={currentTech.imageMobile} className="w-full" />
@@ -118,7 +118,7 @@ const Technology = () => {
               })}
             </div>
             <div className="flex flex-col items-center mt-5 mx-20">
-              <p className="text-[#D0D6F9] font-barlow-condensed text-lg font-normal">
+              <p className="text-[#D0D6F9] font-barlowCondensed text-lg font-normal">
                 THE TERMINOLOGY…
               </p>
               <p className="text-white font-bellefair text-3xl font-normal mt-3">

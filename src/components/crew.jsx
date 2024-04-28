@@ -44,7 +44,7 @@ const Crew = () => {
 
   return (
     <div className="md:mx-1 lg:mx-24 h-3/4">
-      <p className="text-white font-barlow-condensed text-xl my-1 md:my-10 mx-12  tracking-wider">
+      <p className="text-white font-barlowCondensed text-xl my-1 md:my-10 mx-12  tracking-wider">
         <span className="text-gray-400">02</span> MEET YOUR CREW
       </p>
       <div
